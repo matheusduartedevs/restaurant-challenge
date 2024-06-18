@@ -1,41 +1,49 @@
 {
     "products": [
         {
+            "id": 1,
             "name": "Lasanha à Bolonhesa",
             "price": 24.99,
             "image": "src/images/lasanha.webp"
         },
         {
+            "id": 2,
             "name": "Salmão Grelhado",
             "price": 28.50,
             "image": "src/images/salmao.webp"
         },
         {
+            "id": 3,
             "name": "Caesar Salad",
             "price": 12.75,
             "image": "src/images/caesar_salad.webp"
         },
         {
+            "id": 4,
             "name": "Sushi de Salmão",
             "price": 32.00,
             "image": "src/images/sushi_salmão.webp"
         },
         {
+            "id": 5,
             "name": "Batata Rústica",
             "price": 9.99,
             "image": "src/images/batata_rustica.webp"
         },
         {
+            "id": 6,
             "name": "Sorvete de Chocolate",
             "price": 5.50,
             "image": "src/images/sorvete_chocolate.webp"
         },
         {
+            "id": 7,
             "name": "Risoto de Camarão",
             "price": 36.00,
             "image": "src/images/risoto_camarao.webp"
         },
         {
+            "id": 8,
             "name": "Tiramisu",
             "price": 7.25,
             "image": "src/images/tiramisu.webp"

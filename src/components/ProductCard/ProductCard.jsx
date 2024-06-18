@@ -10,12 +10,19 @@ const ProductCard = ({ data }) => {
 
   const { cartItems, setCartItems } = useContext(AppContext)
 
-  const handleAddCart = () => setCartItems([...cartItems, data])
+  const handleAddCart = () => {
+    const newItem = {
+      ...data,
+      uniqueId: Date.now() + Math.random()
+    }
+
+    setCartItems([...cartItems, newItem])
+  }
 
   return (
     <section className='product-card'>
       <img
-        src={image.replace(/\w\.jpg/gi, 'W.jpg')}
+        src={image}
         alt="product"
         className="card__image"
       />

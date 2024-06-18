@@ -7,10 +7,10 @@ import './CartItem.css'
 
 const CartItem = ({ data }) => {
   const { cartItems, setCartItems } = useContext(AppContext)
-  const { id, image, name, price } = data
+  const { uniqueId, image, name, price } = data
 
   const handleRemoveItem = () => {
-    const updatedItems = cartItems.filter((item) => item.id != id)
+    const updatedItems = cartItems.filter((item) => item.uniqueId != uniqueId)
     setCartItems(updatedItems)
   }
 
