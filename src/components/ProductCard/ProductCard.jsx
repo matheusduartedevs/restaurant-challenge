@@ -24,7 +24,7 @@ const ProductCard = ({ data }) => {
       <img
         src={image}
         alt="product"
-        className="card__image"
+        className="card-image"
       />
 
       <div className="card-infos">
