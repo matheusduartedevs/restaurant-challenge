@@ -16,20 +16,10 @@ const CartItem = ({ data }) => {
 
   return (
     <section className="cart-item">
-      <img src={image}
-        alt="imagem do produto"
-        className='cart-item-image'
-      />
-
       <div className="cart-item-content">
         <h3 className="cart-item-title">{name}</h3>
         <h3 className="cart-item-price">{formatCurrency(price, 'BRL')}</h3>
-
-        <button
-          type="button"
-          className="button-remove-item"
-          onClick={handleRemoveItem}
-        >
+        <button type="button" className="button-remove-item" onClick={handleRemoveItem}>
           <BsCartDashFill />
         </button>
       </div>
@@ -40,5 +30,5 @@ const CartItem = ({ data }) => {
 export default CartItem
 
 CartItem.propTypes = {
-  data: propTypes.object
-}.isRequired;
+  data: propTypes.object.isRequired,
+}
